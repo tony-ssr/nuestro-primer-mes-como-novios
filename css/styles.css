@@ -758,6 +758,22 @@ body {
     font-size: 18px;
 }
 
+.control-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    transition: all var(--transition-fast);
+}
+
+.play-btn .control-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.control-btn:hover .control-icon {
+    transform: scale(1.1);
+}
+
 .play-icon {
     transition: all var(--transition-fast);
 }

@@ -550,12 +550,12 @@ function togglePlayPause() {
         
         if (isPlaying) {
             audioPlayer.pause();
-            playIcon.textContent = '▶';
+            playIcon.src = 'assets/icons/player/play.svg';
             isPlaying = false;
             console.log('⏸️ Música pausada');
         } else {
             audioPlayer.play().then(() => {
-                playIcon.textContent = '⏸';
+                playIcon.src = 'assets/icons/player/pause.svg';
                 isPlaying = true;
                 console.log('▶️ Música reproduciendo');
             }).catch(error => {
@@ -597,12 +597,12 @@ function loadSong(songIndex) {
         // Reproducir automáticamente la nueva canción
         audioPlayer.play().then(() => {
             isPlaying = true;
-            document.querySelector('#playBtn .play-icon').textContent = '⏸';
+            document.querySelector('#playBtn .play-icon').src = 'assets/icons/player/pause.svg';
             console.log('▶️ Reproduciendo automáticamente');
         }).catch(error => {
             console.error('❌ Error al reproducir automáticamente:', error);
             isPlaying = false;
-            document.querySelector('#playBtn .play-icon').textContent = '▶';
+            document.querySelector('#playBtn .play-icon').src = 'assets/icons/player/play.svg';
         });
         
         console.log(`🎵 Cargando canción: ${song.title} - ${song.artist}`);
