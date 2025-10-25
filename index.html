@@ -7,7 +7,7 @@
     <title>1 Mes de Novios - Antony & Mariangel</title>
     
     <!-- Enlace al archivo de estilos CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     
     <!-- Fuentes de Google para un diseño más romántico -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -75,7 +75,7 @@
             <div class="characters-container">
                 <!-- Imagen de PomPomPurim (Antony) -->
                 <div class="character character-pompom">
-                    <img src="assets/images/pompompurin/2-Pompompeanut.jpg" 
+                    <img src="./assets/images/pompompurin/2-Pompompeanut.jpg" 
                          alt="PomPomPurim - Antony" 
                          class="character-image pompom-image">
                     <p class="character-name">PomPomPurim</p>
@@ -89,7 +89,7 @@
                 
                 <!-- Imagen de My Melody (Mariangel) -->
                 <div class="character character-melody">
-                    <img src="assets/images/myMelody/2-My Melody and Kuromi.jpg" 
+                    <img src="./assets/images/myMelody/2-My Melody and Kuromi.jpg" 
                          alt="My Melody - Mariangel" 
                          class="character-image melody-image">
                     <p class="character-name">My Melody</p>
@@ -303,7 +303,7 @@
             <!-- My Melody -->
             <div class="character-card melody-card">
                 <div class="character-image-container">
-                    <img src="assets/images/myMelody/2-My Melody and Kuromi.jpg" alt="My Melody" class="character-main-image">
+                    <img src="./assets/images/myMelody/2-My Melody and Kuromi.jpg" alt="My Melody" class="character-main-image">
                     <div class="character-aura melody-aura"></div>
                 </div>
                 
@@ -351,7 +351,7 @@
             <!-- PomPomPurim -->
             <div class="character-card pompom-card">
                 <div class="character-image-container">
-                    <img src="assets/images/pompompurin/2-Pompompeanut.jpg" alt="PomPomPurim" class="character-main-image">
+                    <img src="./assets/images/pompompurin/2-Pompompeanut.jpg" alt="PomPomPurim" class="character-main-image">
                     <div class="character-aura pompom-aura"></div>
                 </div>
                 
@@ -482,26 +482,27 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Modal de Video -->
-            <div class="video-modal" id="videoModal">
-                <div class="modal-backdrop" id="videoBackdrop"></div>
-                <div class="modal-content">
-                    <button class="modal-close" id="videoClose">×</button>
-                    <div class="video-container">
-                        <video class="full-video" id="fullVideo" controls>
-                            <source src="" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                    </div>
-                    <div class="video-details">
-                        <h3 class="modal-title" id="modalTitle"></h3>
-                        <p class="modal-description" id="modalDescription"></p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    
+    <!-- Modal de Video -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-backdrop" id="videoBackdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="videoClose">×</button>
+            <div class="video-container">
+                <video class="full-video" id="fullVideo" controls>
+                    <source src="" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="video-details">
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-description" id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
     
     <!-- Sección Final - Con Todo Mi Amor -->
     <section class="final-section" id="finalSection">
@@ -575,7 +576,7 @@
             <!-- Información de la canción actual -->
             <div class="song-info">
                 <div class="song-cover" id="songCover">
-                    <img src="assets/songs/Frank Sativa - That's My Girl.png" alt="Portada de canción" id="coverImage">
+                    <img src="./assets/songs/Frank Sativa - That's My Girl.png" alt="Portada de canción" id="coverImage">
                 </div>
                 <div class="song-details">
                     <h3 class="song-title" id="songTitle">That's My Girl</h3>
@@ -608,21 +609,21 @@
             <!-- Lista de canciones -->
             <div class="playlist" id="playlist">
                 <div class="playlist-item active" data-song="0">
-                    <img src="assets/songs/Frank Sativa - That's My Girl.png" alt="That's My Girl">
+                    <img src="./assets/songs/Frank Sativa - That's My Girl.png" alt="That's My Girl">
                     <div class="playlist-info">
                         <span class="playlist-title">That's My Girl</span>
                         <span class="playlist-artist">Frank Sativa</span>
                     </div>
                 </div>
                 <div class="playlist-item" data-song="1">
-                    <img src="assets/songs/Gizmo Varillas - Cysgod dy Gariad.png" alt="Cysgod dy Gariad">
+                    <img src="./assets/songs/Gizmo Varillas - Cysgod dy Gariad.png" alt="Cysgod dy Gariad">
                     <div class="playlist-info">
                         <span class="playlist-title">Cysgod dy Gariad</span>
                         <span class="playlist-artist">Gizmo Varillas</span>
                     </div>
                 </div>
                 <div class="playlist-item" data-song="2">
-                    <img src="assets/songs/marQ - My Lady.png" alt="My Lady">
+                    <img src="./assets/songs/marQ - My Lady.png" alt="My Lady">
                     <div class="playlist-info">
                         <span class="playlist-title">My Lady</span>
                         <span class="playlist-artist">marQ</span>
@@ -633,11 +634,11 @@
         
         <!-- Audio element (oculto) -->
         <audio id="audioPlayer" preload="metadata">
-            <source src="assets/songs/Frank Sativa - That's My Girl.mp3" type="audio/mpeg">
+            <source src="./assets/songs/Frank Sativa - That's My Girl.mp3" type="audio/mpeg">
         </audio>
     </div>
     
     <!-- Enlace al archivo JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
