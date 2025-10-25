@@ -78,7 +78,7 @@ function initializePage() {
         setupEventListeners();
         
         // Inicializar reproductor de música
-        initializeMusicPlayer();
+        // initializeMusicPlayer(); // DESHABILITADO temporalmente por error en audio
         
         console.log('✅ Página inicializada correctamente');
     } catch (error) {
