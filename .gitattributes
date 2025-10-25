@@ -1,5 +1,4 @@
 # Configuración de Git para el proyecto "Nuestro Primer Mes Siendo Novios"
-
 # Archivos de texto
 *.md text
 *.txt text
@@ -9,7 +8,6 @@
 *.json text
 *.yml text
 *.yaml text
-
 # Archivos binarios
 *.jpg binary
 *.jpeg binary
@@ -20,12 +18,10 @@
 *.mp3 binary
 *.mp4 binary
 *.webp binary
-
 # Archivos de configuración
 .gitignore text
 .gitattributes text
 .gitconfig text
-
 # Archivos de documentación
 README.md text
 LICENSE text
@@ -33,17 +29,14 @@ CHANGELOG.md text
 CONTRIBUTING.md text
 deploy.md text
 project-info.md text
-
 # Archivos de código
 *.html text
 *.css text
 *.js text
 *.py text
-
 # Archivos de configuración del proyecto
 package.json text
 server.py text
-
 # Configuración de line endings
 * text=auto
 *.md text eol=lf
@@ -54,7 +47,6 @@ server.py text
 *.json text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
-
 # Archivos binarios que no deben ser procesados
 *.jpg binary
 *.jpeg binary
@@ -65,7 +57,6 @@ server.py text
 *.mp3 binary
 *.mp4 binary
 *.webp binary
-
 # Archivos que deben ser ignorados por Git LFS
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
@@ -76,17 +67,14 @@ server.py text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.webp filter=lfs diff=lfs merge=lfs -text
-
 # Configuración de merge
 *.css merge=ours
 *.js merge=ours
 *.html merge=ours
-
 # Configuración de diff
 *.css diff=css
 *.js diff=javascript
 *.html diff=html
-
 # Configuración de linguist
 *.md linguist-documentation
 *.txt linguist-documentation
@@ -96,7 +84,6 @@ server.py text
 *.json linguist-documentation
 *.yml linguist-documentation
 *.yaml linguist-documentation
-
 # Archivos que no deben ser contados en estadísticas
 *.jpg linguist-vendored
 *.jpeg linguist-vendored
@@ -107,7 +94,6 @@ server.py text
 *.mp3 linguist-vendored
 *.mp4 linguist-vendored
 *.webp linguist-vendored
-
 # Configuración de export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
@@ -118,7 +104,6 @@ server.py text
 *.yaml export-ignore
 *.json export-ignore
 *.py export-ignore
-
 # Configuración de sparse-checkout
 # Solo incluir archivos necesarios para el funcionamiento
 /*
