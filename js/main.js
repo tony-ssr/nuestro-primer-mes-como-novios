@@ -936,28 +936,28 @@ function loadHerGallery() {
         const herGallery = document.getElementById('herGallery');
         if (!herGallery) return;
         
-        // Mensajes especiales para cada foto de ella
+        // Mensajes especiales para cada foto de ella - Temática socialista original
         const herMessages = [
-            "Si fueras un videojuego, serías el GOTY (Game of the Year) de mi vida",
-            "Eres como el código perfecto: sin bugs, optimizado y hermoso",
-            "¿Cómo haces para que hasta cuando comes pizza se veas elegante?",
-            "Si fueras una canción, serías el hit del verano que nunca se cansa",
-            "Eres como el algoritmo perfecto: siempre encuentras la solución a mi corazón",
-            "¿En serio eres humana? Porque pareces un personaje de anime perfecto",
-            "Si fueras comida, serías el ramen más delicioso del universo",
-            "Eres como el WiFi perfecto: siempre conectada a mi corazón",
-            "¿Cómo logras que hasta cuando duermes se veas como una diosa?",
-            "Si fueras un meme, serías el que hace reír a todo el mundo",
-            "Eres como el código que compila perfecto a la primera",
-            "¿En qué momento te convertiste en el DLC más hermoso de mi vida?",
-            "Si fueras música, serías la playlist que nunca se acaba",
-            "Eres como el bug que no quiero arreglar porque es perfecto",
-            "¿Cómo haces para que hasta cuando estás enojada se veas adorable?",
-            "Si fueras un videojuego, serías el que tiene 10/10 en todas las reseñas",
-            "Eres como el commit perfecto: 'Agregada la mujer más hermosa del mundo'",
-            "¿En serio eres real? Porque pareces un render en 4K",
-            "Si fueras comida, serías el sushi más perfecto que existe",
-            "Eres como el código que no necesita comentarios porque es perfecto"
+            "Tu mirada es como la llama de la revolución: ardiente, pura y transformadora",
+            "Eres mi proletaria del corazón, la trabajadora más bella de mi vida",
+            "Si fueras una asamblea popular, serías la más democrática y justa",
+            "Tu sonrisa es como el amanecer después de la victoria: radiante y esperanzadora",
+            "Eres mi sindicato del amor, donde todos los derechos están garantizados",
+            "Como la tierra para el campesino, tú eres mi hogar y mi sustento",
+            "Si fueras una huelga, serías la más justa y necesaria del mundo",
+            "Tu belleza es como la educación pública: gratuita, universal y de calidad",
+            "Eres mi cooperativa de felicidad, donde todos los beneficios se comparten",
+            "Como el pueblo en la plaza, tu presencia llena mi corazón de esperanza",
+            "Si fueras una reforma agraria, serías la más justa y necesaria",
+            "Tu amor es como la salud pública: universal, gratuita y de calidad",
+            "Eres mi asamblea constituyente, donde se escriben las leyes de mi corazón",
+            "Como la vivienda digna, tú eres mi refugio seguro y acogedor",
+            "Si fueras un salario mínimo, serías el más justo y necesario",
+            "Tu compañía es como el transporte público: accesible, confiable y esencial",
+            "Eres mi plan de desarrollo, donde cada meta se alcanza con amor",
+            "Como la cultura popular, tu esencia es auténtica y genuina",
+            "Si fueras una política social, serías la más progresista y humana",
+            "Tu presencia es como la luz del alba: nueva, fresca y llena de promesas"
         ];
         
         // Cargar fotos de ella (1-17)
