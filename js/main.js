@@ -594,10 +594,16 @@ function loadSong(songIndex) {
         // Actualizar lista de reproducción
         updatePlaylistSelection(songIndex);
         
-        // Pausar reproducción actual
-        audioPlayer.pause();
-        isPlaying = false;
-        document.querySelector('.play-icon').textContent = '▶';
+        // Reproducir automáticamente la nueva canción
+        audioPlayer.play().then(() => {
+            isPlaying = true;
+            document.querySelector('#playBtn .play-icon').textContent = '⏸';
+            console.log('▶️ Reproduciendo automáticamente');
+        }).catch(error => {
+            console.error('❌ Error al reproducir automáticamente:', error);
+            isPlaying = false;
+            document.querySelector('#playBtn .play-icon').textContent = '▶';
+        });
         
         console.log(`🎵 Cargando canción: ${song.title} - ${song.artist}`);
     } catch (error) {
