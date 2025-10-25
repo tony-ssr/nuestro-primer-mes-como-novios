@@ -1,0 +1,16 @@
+[user]
+    name = tony-ssr
+    email = 10antonysalcedo@gmail.com
+
+[core]
+    autocrlf = true
+    editor = code
+
+[push]
+    default = simple
+
+[pull]
+    rebase = false
+
+[init]
+    defaultBranch = main

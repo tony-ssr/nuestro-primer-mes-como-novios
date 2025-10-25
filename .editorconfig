@@ -1,0 +1,206 @@
+# EditorConfig para el proyecto "Nuestro Primer Mes Siendo Novios"
+# Desarrollado por Antony Salcedo
+
+# Configuración global
+root = true
+
+# Configuración para todos los archivos
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Configuración para archivos HTML
+[*.html]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos CSS
+[*.css]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos JavaScript
+[*.js]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos JSON
+[*.json]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos Markdown
+[*.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos YAML
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos Python
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos de configuración
+[*.{ini,cfg,conf}]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos de texto plano
+[*.txt]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de Git
+[.gitignore]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+[.gitattributes]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+[.gitconfig]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos de configuración del proyecto
+[package.json]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+[server.py]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos de documentación
+[README.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+[LICENSE]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+[CHANGELOG.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+[CONTRIBUTING.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+[deploy.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+[project-info.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de configuración del editor
+[.editorconfig]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos de configuración de Git
+[.gitattributes]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos de configuración del proyecto
+[.gitignore]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos de configuración del servidor
+[server.py]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# Configuración para archivos de configuración del paquete
+[package.json]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+# Configuración para archivos de configuración del proyecto
+[project-info.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de configuración del despliegue
+[deploy.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de configuración de contribución
+[CONTRIBUTING.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de configuración del changelog
+[CHANGELOG.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de configuración de la licencia
+[LICENSE]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# Configuración para archivos de configuración del README
+[README.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false

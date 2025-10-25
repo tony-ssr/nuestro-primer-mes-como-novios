@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Mes de Novios - Antony & Mariangel</title>
+    
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fuentes de Google para un diseño más romántico -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <span class="brand-text">💕 Para Mariangel</span>
+            </div>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="#hero" class="navbar-link active" data-section="hero">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Inicio</span>
+                </a>
+                <a href="#letterSection" class="navbar-link" data-section="letter">
+                    <span class="nav-icon">💌</span>
+                    <span class="nav-text">Mi Carta</span>
+                </a>
+                <a href="#gallerySection" class="navbar-link" data-section="gallery">
+                    <span class="nav-icon">📸</span>
+                    <span class="nav-text">Galería</span>
+                </a>
+                <a href="#gameSection" class="navbar-link" data-section="game">
+                    <span class="nav-icon">🎮</span>
+                    <span class="nav-text">Juego</span>
+                </a>
+                <a href="#charactersSection" class="navbar-link" data-section="characters">
+                    <span class="nav-icon">🌸</span>
+                    <span class="nav-text">Personajes</span>
+                </a>
+                <a href="#videosSection" class="navbar-link" data-section="videos">
+                    <span class="nav-icon">🎬</span>
+                    <span class="nav-text">Videos</span>
+                </a>
+                <a href="#finalSection" class="navbar-link" data-section="final">
+                    <span class="nav-icon">💕</span>
+                    <span class="nav-text">Amor</span>
+                </a>
+            </div>
+            
+            <button class="navbar-toggle" id="navbarToggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sección principal del header/inicio -->
+    <header class="hero-section" id="hero">
+        <!-- Contenedor principal del hero -->
+        <div class="hero-container">
+            
+            <!-- Título principal de la página -->
+            <div class="main-title">
+                <h1 class="title-text">1 Mes de Novios</h1>
+                <p class="subtitle-text">Antony & Mariangel</p>
+                <p class="date-text">25 de Septiembre - 25 de Octubre, 2025</p>
+            </div>
+            
+            <!-- Contenedor de los personajes -->
+            <div class="characters-container">
+                <!-- Imagen de PomPomPurim (Antony) -->
+                <div class="character character-pompom">
+                    <img src="assets/images/pompompurin/2-Pompompeanut.jpg" 
+                         alt="PomPomPurim - Antony" 
+                         class="character-image pompom-image">
+                    <p class="character-name">PomPomPurim</p>
+                    <p class="character-real-name">Antony</p>
+                </div>
+                
+                <!-- Corazón central entre los personajes -->
+                <div class="heart-container">
+                    <div class="heart">💕</div>
+                </div>
+                
+                <!-- Imagen de My Melody (Mariangel) -->
+                <div class="character character-melody">
+                    <img src="assets/images/myMelody/2-My Melody and Kuromi.jpg" 
+                         alt="My Melody - Mariangel" 
+                         class="character-image melody-image">
+                    <p class="character-name">My Melody</p>
+                    <p class="character-real-name">Mariangel</p>
+                </div>
+            </div>
+            
+            <!-- Contador de tiempo en tiempo real -->
+            <div class="time-counter" id="timeCounter">
+                <h2 class="counter-title">Tiempo juntos</h2>
+                <div class="counter-display">
+                    <div class="time-unit">
+                        <span class="time-number" id="days">0</span>
+                        <span class="time-label">Días</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">0</span>
+                        <span class="time-label">Horas</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">0</span>
+                        <span class="time-label">Minutos</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">0</span>
+                        <span class="time-label">Segundos</span>
+                    </div>
+                </div>
+                <p class="counter-subtitle">desde el 25 de septiembre de 2025</p>
+            </div>
+            
+            <!-- Botón para continuar a la siguiente sección -->
+            <div class="scroll-indicator">
+                <button class="scroll-button" onclick="scrollToNext()">
+                    <span>Mi Carta para Ti</span>
+                    <div class="scroll-arrow">↓</div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Elementos decorativos de fondo -->
+        <div class="background-decorations">
+            <div class="floating-heart heart-1">💖</div>
+            <div class="floating-heart heart-2">💕</div>
+            <div class="floating-heart heart-3">💗</div>
+            <div class="floating-heart heart-4">💝</div>
+        </div>
+    </header>
+    
+    <!-- Sección de la Carta -->
+    <section class="letter-section" id="letterSection">
+        <div class="letter-container">
+            <h2 class="letter-title">Mi Carta para Ti</h2>
+            <p class="letter-subtitle">Una carta especial para mi amor</p>
+            
+            <!-- Sobre de la carta -->
+            <div class="envelope-container" id="envelopeContainer">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-front">
+                        <div class="envelope-body">
+                            <div class="envelope-seal">
+                                <div class="seal-heart">💕</div>
+                            </div>
+                            <p class="envelope-text">Para: Mariangel</p>
+                            <p class="envelope-text">De: Antony</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="envelope-instruction">Toca el sobre para abrir la carta</p>
+            </div>
+            
+            <!-- Contenido de la carta (inicialmente oculto) -->
+            <div class="letter-content" id="letterContent">
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <h3 class="letter-greeting">Para mi Mariangel, mi niña preciosa:</h3>
+                    </div>
+                    
+                    <div class="letter-body">
+                        <p class="letter-paragraph">
+                            Feliz primer mes. Sé que es solo el comienzo, pero mi corazón está increíblemente feliz, más de lo que jamás pensé. Es muy loco ponerme a pensar en cómo empezó todo y cómo llegamos a esto que se siente tan importante para mí.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            La verdad, yo no te vi venir. Fui yo quien al principio puso una línea, pero tú, con esa forma tan tuya de ser, lo cambiaste todo. Contigo estoy sintiendo una conexión completamente nueva, diferente a todo. Me hace muy feliz haberte conocido y haber empezado esa conversación. Hoy, mis ganas de estar contigo son mucho más grandes que cualquier miedo que pude tener. Te amo muchísimo.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            En este presente que compartimos, la vida contigo es calma. Es sentir que puedo ser yo mismo, sin filtros, sin tener que mentir o aparentar nada. Eres la mujer más tierna, más wonita y pechocha. Contigo me siento tranquilo, en paz y en total confianza.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            Te extraño cuando no estamos juntos. Amo cómo me haces reír y la paz que me das. Me encanta cuando me miras y, sí, se me alborota el corazón cuando te ríes. Eres mi amor, y mi amor solo hay una: tú. Eres más que suficiente para mí y estoy muy orgulloso de ti, de la mujer que eres y de todo por lo que luchas.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            Pienso en el mañana y me ilusiona todo lo que vamos a construir juntos, paso a paso. Quiero estar contigo mañana y todos los días que sigan. Te has convertido en mi centro, en mi hogar. Solo quiero abrazarte, mimarte, besarte por horas y pasar mi tiempo contigo. Aunque somos dos personas, también siento que somos uno, que mi vida se ha unido a la tuya y que esto nuestro lo vale todo. Este cariño tan profundo que nos tenemos es lo más importante.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            Estás en mi cabeza todo el tiempo. Vamos a seguir adelante, siempre.
+                        </p>
+                        
+                        <p class="letter-paragraph">
+                            Te amo, Mariangel. Te amo muchísimo, te amo demasiado, te amo un montón.
+                        </p>
+                    </div>
+                    
+                    <div class="letter-signature">
+                        <p class="signature-text">Con todo mi corazón,</p>
+                        <p class="signature-name">Antony</p>
+                        <p class="signature-nickname">(Tu bebé, tu amor, tu ingeniero)</p>
+                    </div>
+                </div>
+                
+                <!-- Botón para cerrar la carta -->
+                <button class="close-letter-btn" id="closeLetterBtn">
+                    <span>Cerrar Carta</span>
+                    <div class="close-icon">✕</div>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Galería -->
+    <section class="gallery-section" id="gallerySection">
+        <div class="gallery-container">
+            <h2 class="gallery-title">Nuestros Momentos</h2>
+            <p class="gallery-subtitle">Recuerdos especiales que atesoramos</p>
+            
+            <!-- Galería de fotos de ella -->
+            <div class="gallery-category">
+                <h3 class="category-title">Mi Bella Mariangel</h3>
+                <div class="gallery-grid" id="herGallery">
+                    <!-- Fotos de ella se cargarán dinámicamente -->
+                </div>
+            </div>
+            
+            <!-- Galería de fotos juntos -->
+            <div class="gallery-category">
+                <h3 class="category-title">Tu y Yo</h3>
+                <div class="gallery-grid" id="togetherGallery">
+                    <!-- Fotos juntos se cargarán dinámicamente -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para ver fotos en grande -->
+        <div class="photo-modal" id="photoModal">
+            <div class="modal-backdrop" id="modalBackdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">×</button>
+                <div class="modal-image-container">
+                    <img class="modal-image" id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-message" id="modalMessage">
+                    <p class="message-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Juego Interactivo -->
+    <section class="game-section" id="gameSection">
+        <div class="game-container">
+            <h2 class="game-title">Juego del Amor</h2>
+            <p class="game-subtitle">Toca los emojis para descubrir mensajes especiales</p>
+            
+            <!-- Contador de emojis encontrados -->
+            <div class="game-counter">
+                <span class="counter-text">Emojis encontrados: </span>
+                <span class="counter-number" id="foundEmojis">0</span>
+                <span class="counter-total">/ <span id="totalEmojis">15</span></span>
+            </div>
+            
+            <!-- Zona de juego -->
+            <div class="game-area" id="gameArea">
+                <!-- Los emojis se generarán dinámicamente -->
+            </div>
+            
+            <!-- Mensaje de amor que aparece al hacer clic -->
+            <div class="love-message-modal" id="loveMessageModal">
+                <div class="message-backdrop" id="messageBackdrop"></div>
+                <div class="message-content">
+                    <button class="message-close" id="messageClose">×</button>
+                    <div class="message-heart">💕</div>
+                    <p class="message-text" id="messageText"></p>
+                </div>
+            </div>
+            
+            <!-- Mensaje final y botón de reinicio -->
+            <div class="game-complete" id="gameComplete">
+                <div class="complete-content">
+                    <h3 class="complete-title">¡Felicidades!</h3>
+                    <p class="complete-message">Has encontrado todos los mensajes de amor. Eres la persona más especial del mundo para mí.</p>
+                    <button class="restart-button" id="restartButton">
+                        <span>Jugar de Nuevo</span>
+                        <div class="restart-icon">🔄</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Personajes - My Melody & PomPomPurim -->
+    <section class="characters-section" id="charactersSection">
+        <div class="characters-container">
+            <h2 class="characters-title">Nuestros Personajes del Corazón</h2>
+            <p class="characters-subtitle">My Melody & PomPomPurim - Una historia de amor perfecta</p>
+            
+            <!-- My Melody -->
+            <div class="character-card melody-card">
+                <div class="character-image-container">
+                    <img src="assets/images/myMelody/2-My Melody and Kuromi.jpg" alt="My Melody" class="character-main-image">
+                    <div class="character-aura melody-aura"></div>
+                </div>
+                
+                <div class="character-content">
+                    <h3 class="character-name">My Melody</h3>
+                    <p class="character-real-name">Mariangel</p>
+                    
+                    <div class="character-traits">
+                        <h4 class="traits-title">Su Personalidad</h4>
+                        <div class="traits-grid">
+                            <div class="trait-item">
+                                <span class="trait-icon">🌸</span>
+                                <span class="trait-text">Dulce y tierna</span>
+                            </div>
+                            <div class="trait-item">
+                                <span class="trait-icon">💕</span>
+                                <span class="trait-text">Amorosa y cariñosa</span>
+                            </div>
+                            <div class="trait-item">
+                                <span class="trait-icon">🎵</span>
+                                <span class="trait-text">Musical y alegre</span>
+                            </div>
+                            <div class="trait-item">
+                                <span class="trait-icon">✨</span>
+                                <span class="trait-text">Mágica y especial</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="character-description">
+                        <p>My Melody es la personificación del amor puro y la dulzura. Con su capucha rosa y su corazón lleno de bondad, representa la ternura y el cariño que llena cada momento de nuestra relación. Su personalidad alegre y musical hace que cada día sea una melodía perfecta.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Corazón Central -->
+            <div class="love-connection">
+                <div class="connection-heart">
+                    <div class="heart-pulse"></div>
+                    <span class="heart-emoji">💕</span>
+                </div>
+                <p class="connection-text">Amor Eterno</p>
+            </div>
+            
+            <!-- PomPomPurim -->
+            <div class="character-card pompom-card">
+                <div class="character-image-container">
+                    <img src="assets/images/pompompurin/2-Pompompeanut.jpg" alt="PomPomPurim" class="character-main-image">
+                    <div class="character-aura pompom-aura"></div>
+                </div>
+                
+                <div class="character-content">
+                    <h3 class="character-name">PomPomPurim</h3>
+                    <p class="character-real-name">Antony</p>
+                    
+                    <div class="character-traits">
+                        <h4 class="traits-title">Su Personalidad</h4>
+                        <div class="traits-grid">
+                            <div class="trait-item">
+                                <span class="trait-icon">🐶</span>
+                                <span class="trait-text">Leal y fiel</span>
+                            </div>
+                            <div class="trait-item">
+                                <span class="trait-icon">🍮</span>
+                                <span class="trait-text">Dulce y protector</span>
+                            </div>
+                            <div class="trait-item">
+                                <span class="trait-icon">💛</span>
+                                <span class="trait-text">Alegre y optimista</span>
+                            </div>
+                            <div class="trait-item">
+                                <span class="trait-icon">🛡️</span>
+                                <span class="trait-text">Protector y valiente</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="character-description">
+                        <p>PomPomPurim es la encarnación de la lealtad y la protección. Con su naturaleza dulce y su corazón valiente, representa la fuerza y el amor incondicional que protege y cuida a su My Melody. Su personalidad alegre y optimista hace que cada día sea una aventura llena de amor.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Historia de Amor -->
+            <div class="love-story">
+                <h3 class="story-title">Nuestra Historia de Amor</h3>
+                <div class="story-content">
+                    <div class="story-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker melody-marker"></div>
+                            <div class="timeline-content">
+                                <h4>El Encuentro</h4>
+                                <p>Como My Melody y PomPomPurim, nos encontramos en el momento perfecto. Ella con su dulzura y él con su lealtad, creando una conexión mágica desde el primer momento.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker pompom-marker"></div>
+                            <div class="timeline-content">
+                                <h4>El Amor</h4>
+                                <p>Nuestro amor creció como la amistad perfecta entre estos personajes: puro, sincero y lleno de aventuras. Cada día juntos es una nueva melodía de felicidad.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker love-marker"></div>
+                            <div class="timeline-content">
+                                <h4>El Futuro</h4>
+                                <p>Como My Melody y PomPomPurim, seguiremos creando historias de amor, aventuras y momentos mágicos. Nuestra historia de amor es eterna, como la amistad perfecta de estos personajes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Videos Especiales -->
+    <section class="videos-section" id="videosSection">
+        <div class="videos-container">
+            <h2 class="videos-title">Nuestros Momentos en Video</h2>
+            <p class="videos-subtitle">Recuerdos especiales que capturamos juntos</p>
+            
+            <!-- Video 1: Helado -->
+            <div class="video-card ice-cream-video">
+                <div class="video-thumbnail">
+                    <video class="video-preview" poster="./assets/videos/helado-juntos.png" preload="metadata">
+                        <source src="./assets/videos/helado-juntos.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="play-button" data-video="helado">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-overlay">
+                        <h3 class="video-title">Nuestro Helado Especial</h3>
+                        <p class="video-description">Ese día salimos a comer helado juntos y estuvo bien rico ese helado</p>
+                    </div>
+                </div>
+                
+                <div class="video-info">
+                    <h3 class="video-name">Día del Helado</h3>
+                    <p class="video-date">Un momento dulce juntos</p>
+                    <div class="video-tags">
+                        <span class="tag">🍦</span>
+                        <span class="tag">Dulce</span>
+                        <span class="tag">Rico</span>
+                        <span class="tag">Juntos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video 2: Nariz Morada -->
+            <div class="video-card nose-video">
+                <div class="video-thumbnail">
+                    <video class="video-preview" poster="./assets/videos/nariz-morada.png" preload="metadata">
+                        <source src="./assets/videos/nariz-morada.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="play-button" data-video="nariz">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-overlay">
+                        <h3 class="video-title">La Nariz Morada</h3>
+                        <p class="video-description">Cuando te mordí fuerte la nariz y te quedó morada, parecías payasita djhsakd</p>
+                    </div>
+                </div>
+                
+                <div class="video-info">
+                    <h3 class="video-name">Momento Payasita</h3>
+                    <p class="video-date">El día que te quedaste con nariz morada</p>
+                    <div class="video-tags">
+                        <span class="tag">🤡</span>
+                        <span class="tag">Payasita</span>
+                        <span class="tag">Morada</span>
+                        <span class="tag">Divertido</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal de Video -->
+            <div class="video-modal" id="videoModal">
+                <div class="modal-backdrop" id="videoBackdrop"></div>
+                <div class="modal-content">
+                    <button class="modal-close" id="videoClose">×</button>
+                    <div class="video-container">
+                        <video class="full-video" id="fullVideo" controls>
+                            <source src="" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="video-details">
+                        <h3 class="modal-title" id="modalTitle"></h3>
+                        <p class="modal-description" id="modalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Final - Con Todo Mi Amor -->
+    <section class="final-section" id="finalSection">
+        <div class="final-container">
+            <!-- Estrellas de fondo -->
+            <div class="stars-background">
+                <div class="star star-1">✨</div>
+                <div class="star star-2">💫</div>
+                <div class="star star-3">⭐</div>
+                <div class="star star-4">🌟</div>
+                <div class="star star-5">✨</div>
+                <div class="star star-6">💫</div>
+                <div class="star star-7">⭐</div>
+                <div class="star star-8">🌟</div>
+            </div>
+            
+            <!-- Contenido principal -->
+            <div class="final-content">
+                <h2 class="final-title">Gracias por Llegar a Mi Vida</h2>
+                
+                <div class="final-message">
+                    <p class="message-line">Mariangel,</p>
+                    <p class="message-line">Gracias por llegar a mi vida y llenarla de tanto amor.</p>
+                    <p class="message-line">Cada día contigo es una bendición que atesoro en mi corazón.</p>
+                    <p class="message-line">Tu sonrisa es mi luz, tu amor es mi fuerza.</p>
+                    <p class="message-line">Te amo muchísimo, más de lo que las palabras pueden expresar.</p>
+                </div>
+                
+                <div class="final-heart">
+                    <div class="heart-container">
+                        <div class="heart-pulse"></div>
+                        <span class="heart-emoji">💕</span>
+                    </div>
+                </div>
+                
+                <div class="final-signature">
+                    <p class="signature-text">Con todo mi amor para ti,</p>
+                    <p class="signature-name">Antony Salcedo</p>
+                    <p class="signature-date">Para mi niña hermosa</p>
+                </div>
+                
+                <!-- Corazones flotantes -->
+                <div class="floating-hearts">
+                    <div class="floating-heart heart-1">💖</div>
+                    <div class="floating-heart heart-2">💕</div>
+                    <div class="floating-heart heart-3">💗</div>
+                    <div class="floating-heart heart-4">💝</div>
+                    <div class="floating-heart heart-5">💘</div>
+                    <div class="floating-heart heart-6">💖</div>
+                    <div class="floating-heart heart-7">💕</div>
+                    <div class="floating-heart heart-8">💗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reproductor de música flotante -->
+    <div class="floating-player" id="floatingPlayer">
+        <!-- Controles del reproductor -->
+        <div class="player-controls">
+            <button class="player-toggle" id="playerToggle" title="Minimizar/Expandir reproductor">
+                <span class="toggle-icon">−</span>
+            </button>
+            <button class="player-close" id="playerClose" title="Cerrar reproductor">
+                <span class="close-icon">×</span>
+            </button>
+        </div>
+        
+        <!-- Contenido del reproductor -->
+        <div class="player-content" id="playerContent">
+            <!-- Información de la canción actual -->
+            <div class="song-info">
+                <div class="song-cover" id="songCover">
+                    <img src="assets/songs/Frank Sativa - That's My Girl.png" alt="Portada de canción" id="coverImage">
+                </div>
+                <div class="song-details">
+                    <h3 class="song-title" id="songTitle">That's My Girl</h3>
+                    <p class="song-artist" id="songArtist">Frank Sativa</p>
+                </div>
+            </div>
+            
+            <!-- Controles de reproducción -->
+            <div class="playback-controls">
+                <button class="control-btn prev-btn" id="prevBtn" title="Canción anterior">
+                    <span>⏮</span>
+                </button>
+                <button class="control-btn play-btn" id="playBtn" title="Reproducir/Pausar">
+                    <span class="play-icon">▶</span>
+                </button>
+                <button class="control-btn next-btn" id="nextBtn" title="Siguiente canción">
+                    <span>⏭</span>
+                </button>
+            </div>
+            
+            <!-- Barra de progreso -->
+            <div class="progress-container">
+                <span class="time-display" id="currentTime">0:00</span>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="time-display" id="totalTime">0:00</span>
+            </div>
+            
+            <!-- Lista de canciones -->
+            <div class="playlist" id="playlist">
+                <div class="playlist-item active" data-song="0">
+                    <img src="assets/songs/Frank Sativa - That's My Girl.png" alt="That's My Girl">
+                    <div class="playlist-info">
+                        <span class="playlist-title">That's My Girl</span>
+                        <span class="playlist-artist">Frank Sativa</span>
+                    </div>
+                </div>
+                <div class="playlist-item" data-song="1">
+                    <img src="assets/songs/Gizmo Varillas - Cysgod dy Gariad.png" alt="Cysgod dy Gariad">
+                    <div class="playlist-info">
+                        <span class="playlist-title">Cysgod dy Gariad</span>
+                        <span class="playlist-artist">Gizmo Varillas</span>
+                    </div>
+                </div>
+                <div class="playlist-item" data-song="2">
+                    <img src="assets/songs/marQ - My Lady.png" alt="My Lady">
+                    <div class="playlist-info">
+                        <span class="playlist-title">My Lady</span>
+                        <span class="playlist-artist">marQ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Audio element (oculto) -->
+        <audio id="audioPlayer" preload="metadata">
+            <source src="assets/songs/Frank Sativa - That's My Girl.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
