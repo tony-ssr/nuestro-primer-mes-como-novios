@@ -546,7 +546,7 @@ function setupPlayerEvents() {
 function togglePlayPause() {
     try {
         const audioPlayer = document.getElementById('audioPlayer');
-        const playIcon = document.querySelector('.play-icon');
+        const playIcon = document.querySelector('#playBtn .play-icon');
         
         if (isPlaying) {
             audioPlayer.pause();
