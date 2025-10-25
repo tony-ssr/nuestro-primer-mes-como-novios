@@ -34,20 +34,20 @@ const PLAYLIST = [
     {
         title: "That's My Girl",
         artist: "Frank Sativa",
-        src: "assets/songs/Frank Sativa - That's My Girl.mp3",
-        cover: "assets/songs/Frank Sativa - That's My Girl.png"
+        src: "/nuestro-primer-mes-siendo-novios/assets/songs/Frank Sativa - That's My Girl.mp3",
+        cover: "/nuestro-primer-mes-siendo-novios/assets/songs/Frank Sativa - That's My Girl.png"
     },
     {
         title: "Cysgod dy Gariad",
         artist: "Gizmo Varillas",
-        src: "assets/songs/Gizmo Varillas - Cysgod dy Gariad.mp3",
-        cover: "assets/songs/Gizmo Varillas - Cysgod dy Gariad.png"
+        src: "/nuestro-primer-mes-siendo-novios/assets/songs/Gizmo Varillas - Cysgod dy Gariad.mp3",
+        cover: "/nuestro-primer-mes-siendo-novios/assets/songs/Gizmo Varillas - Cysgod dy Gariad.png"
     },
     {
         title: "My Lady",
         artist: "marQ",
-        src: "assets/songs/marQ - My Lady.mp3",
-        cover: "assets/songs/marQ - My Lady.png"
+        src: "/nuestro-primer-mes-siendo-novios/assets/songs/marQ - My Lady.mp3",
+        cover: "/nuestro-primer-mes-siendo-novios/assets/songs/marQ - My Lady.png"
     }
 ];
 
@@ -957,7 +957,7 @@ function loadHerGallery() {
         // Cargar fotos de ella (1-17)
         for (let i = 1; i <= 17; i++) {
             const galleryItem = createGalleryItem(
-                `assets/images/fotos - ella/${i}.jpg`,
+                `/nuestro-primer-mes-siendo-novios/assets/images/fotos - ella/${i}.jpg`,
                 herMessages[i - 1] || "Eres perfecta tal como eres"
             );
             herGallery.appendChild(galleryItem);
@@ -1004,7 +1004,7 @@ function loadTogetherGallery() {
         // Cargar fotos juntos (1-20)
         for (let i = 1; i <= 20; i++) {
             const galleryItem = createGalleryItem(
-                `assets/images/ella y yo/${i}.jpg`,
+                `/nuestro-primer-mes-siendo-novios/assets/images/ella y yo/${i}.jpg`,
                 togetherMessages[i - 1] || "Nuestro momento especial"
             );
             togetherGallery.appendChild(galleryItem);
@@ -1601,12 +1601,12 @@ function closeVideoModal() {
 function getVideoData(videoType) {
     const videoData = {
         helado: {
-            src: 'assets/videos/helado-juntos.mp4',
+            src: '/nuestro-primer-mes-siendo-novios/assets/videos/helado-juntos.mp4',
             title: 'Nuestro Helado Especial',
             description: 'Ese día salimos a comer helado juntos y estuvo bien rico ese helado. Un momento dulce que compartimos juntos.'
         },
         nariz: {
-            src: 'assets/videos/nariz-morada.mp4',
+            src: '/nuestro-primer-mes-siendo-novios/assets/videos/nariz-morada.mp4',
             title: 'La Nariz Morada',
             description: 'Cuando te mordí fuerte la nariz y te quedó morada, parecías payasita djhsakd. Un momento divertido que nunca olvidaremos.'
         }
