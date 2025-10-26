@@ -1121,7 +1121,7 @@ function closePhotoModal() {
 // Variables del juego
 let gameEmojis = [];
 let foundEmojis = 0;
-let totalEmojis = 15;
+let totalEmojis = 14;
 let gameMessages = [];
 
 /**
@@ -1163,12 +1163,11 @@ function initializeGame() {
             "Como la justicia social, tu amor es equitativo y para todos",
             "Eres mi manifestación de amor, la que nunca termina",
             "Si fueras una hoz y martillo, serías las herramientas que construyen mi felicidad",
-            "Eres mi comuna de amor, donde todo se comparte y nada se privatiza",
             "Como la lucha obrera, nuestro amor es constante y nunca se rinde"
         ];
         
         // Emojis para el juego
-        const emojis = ['💕', '💖', '💗', '💝', '💘', '💞', '💟', '❤️', '🧡', '💛', '💚', '💙', '💜', '🖤', '🤍'];
+        const emojis = ['💕', '💖', '💗', '💝', '💘', '💞', '💟', '❤️', '🧡', '💛', '💚', '💙', '💜', '🖤'];
         
         // Crear emojis en posiciones aleatorias
         createGameEmojis(emojis);
